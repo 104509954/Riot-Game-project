@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}/*统一渲染效果，避免意外的布局问题。
+}/*统一渲染效果，避免意外的布局问题。*/
 
 /* 页面主体样式 */
 body {
@@ -21,7 +21,7 @@ body {
   color: #333;               /* 文字颜色 */
   line-height: 1.8;          /* 行高 */
 }/*作用：限制页面宽度、居中、加背景图并美化字体。
-   为什么使用：保持排版一致、美观且用户体验良好。
+ 为什么使用：保持排版一致、美观且用户体验良好。*/
 
 /* ===================================================================
  Header & Navigation (页头和导航)
@@ -85,13 +85,13 @@ nav a:hover {
 设置页头颜色、排版；
 .logo 使用 Flex 实现 logo 和文字居中对齐；
 nav ul 用 flex 实现横向导航栏。
-为什么使用：对齐结构整齐，提升导航清晰度和视觉层次。
+为什么使用：对齐结构整齐，提升导航清晰度和视觉层次。*/
 
 /* ===================================================================
  Main Content & Sections (主要内容区域)
  =================================================================== */
 /* 主要内容区域样式 ：作用：设置内容区域的卡片风格，半透明白底、圆角、阴影。
-   为什么使用：提升视觉层次，聚焦内容，背景图不会干扰阅读。*/
+ 为什么使用：提升视觉层次，聚焦内容，背景图不会干扰阅读。*/
 main {
   margin: 20px 0;          /* 上下外边距 */
   padding: 20px;           /* 内边距 */
@@ -110,7 +110,7 @@ section {
 }
 
 /* 标题样式 ：作用：统一标题样式，列表缩进，易读。
-   为什么使用：层级清晰，有利于可访问性（a11y）和结构感。*/
+ 为什么使用：层级清晰，有利于可访问性（a11y）和结构感。*/
 h1, h2, h3 {
   color: #1a1a1a;          /* 深色文字 */
   margin-bottom: 1rem;     /* 底部外边距 */
@@ -166,7 +166,7 @@ dd {
 }
 
 /* Table styles：作用：让表格更整洁、对齐；定义列表突出关键词。
-   为什么使用：数据展示清晰，有格式感，视觉引导良好。 */
+ 为什么使用：数据展示清晰，有格式感，视觉引导良好。 */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -201,7 +201,7 @@ figure img {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }/*作用：自适应布局，不让图溢出，视觉更圆润。
-   为什么使用：响应式兼容性强，增强图片美观度。
+ 为什么使用：响应式兼容性强，增强图片美观度。*/
 
 figcaption {
   margin-top: 0.5rem;
@@ -212,8 +212,8 @@ figcaption {
 /* ===================================================================
  Footer (页脚)
  =================================================================== */
-/* 页脚样式 ：作用：设置深色背景与白字，形成“页面结尾”的清晰感。
-   为什么使用：信息闭环明确、结构完整。*/
+/* 页脚样式 ：作用：设置深色背景与白字，形成"页面结尾"的清晰感。
+ 为什么使用：信息闭环明确、结构完整。*/
 footer {
   background: #222;        /* 深色背景 */
   color: white;            /* 白色文字 */
@@ -238,7 +238,7 @@ footer a:hover {
  Responsive Styles (响应式样式)
  =================================================================== */
 /* 移动设备样式（屏幕宽度小于768px时生效）：作用：为手机或小屏幕优化布局。
-   为什么使用：确保网站在手机上也好用，是现代网页的基础能力。 */
+ 为什么使用：确保网站在手机上也好用，是现代网页的基础能力。 */
 @media (max-width: 768px) {
   body {
       padding: 10px;       /* 减小内边距 */
@@ -259,27 +259,8 @@ footer a:hover {
   /* Logo 容器改为垂直布局 */
   .logo {
       flex-direction: column;  /* 垂直排列 */
-      flex-direction: column;  /* 垂直排列 */
-      gap: 1rem;             /* 减小间距 */
   }
   
-  /* 导航链接样式调整 */
-  nav a {
-      display: block;        /* 块级显示 */
-      padding: 0.5rem;       /* 内边距 */
-  }
-  
-  /* Logo 容器改为垂直布局 */
-  .logo {
-      flex-direction: column;  /* 垂直排列 */
-  }
-  
-  /* 调整标题大小 */
-  .logo h1 {
-      font-size: 2rem;      /* 减小字体大小 */
-  }
-  
-  /* 调整主要内容区域 */
   /* 调整标题大小 */
   .logo h1 {
       font-size: 2rem;      /* 减小字体大小 */
@@ -288,184 +269,18 @@ footer a:hover {
   /* 调整主要内容区域 */
   main {
       padding: 15px;        /* 减小内边距 */
-      padding: 15px;        /* 减小内边距 */
   }
   
-  /* 调整内容区块 */
   /* 调整内容区块 */
   section {
       padding: 15px;        /* 减小内边距 */
-      padding: 15px;        /* 减小内边距 */
   }
   
   /* 调整各级标题大小 */
   h1 {
       font-size: 2rem;
-  /* 调整各级标题大小 */
-  h1 {
-      font-size: 2rem;
   }
   
-  h2 {
-      font-size: 1.75rem;
-  }
-  
-  h3 {
-      font-size: 1.25rem;
-  }
-}
-
-/* ===================================================================
- Form Styles (表单样式)
- =================================================================== */
-/* 表单容器样式 */
-.application-form {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* 表单标题样式 */
-.application-form h2 {
-  text-align: center;
-  color: #1a1a1a;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  border-bottom: 2px solid #ff4655;
-  padding-bottom: 0.5rem;
-}
-
-/* 表单分组样式 */
-.form-section {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.form-section h3 {
-  color: #1a1a1a;
-  margin-bottom: 1.5rem;
-  font-size: 1.3rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0.5rem;
-}
-
-/* 表单组样式 */
-.form-group {
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-/* 标签样式 */
-.form-group label {
-  font-weight: 500;
-  color: #333;
-  font-size: 1rem;
-}
-
-/* 输入框样式 */
-.form-group input,
-.form-group select,
-.form-group textarea {
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s, box-shadow 0.3s;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  border-color: #ff4655;
-  box-shadow: 0 0 0 2px rgba(255, 70, 85, 0.2);
-  outline: none;
-}
-
-/* 单选按钮和复选框组样式 */
-.radio-group,
-.checkbox-group {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 0.5rem;
-}
-
-.radio-group label,
-.checkbox-group label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  cursor: pointer;
-}
-
-/* 提交按钮样式 */
-.submit-group {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.submit-group button {
-  background-color: #ff4655;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.submit-group button:hover {
-  background-color: #e63c4a;
-  transform: translateY(-2px);
-}
-
-.submit-group button:active {
-  transform: translateY(0);
-}
-
-/* 表单行布局（用于并排元素） */
-.form-row {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.form-row .form-group {
-  flex: 1;
-}
-
-/* 错误提示样式 */
-.form-group input:invalid,
-.form-group select:invalid {
-  border-color: #ff4655;
-}
-
-.form-group input:invalid:focus,
-.form-group select:invalid:focus {
-  box-shadow: 0 0 0 2px rgba(255, 70, 85, 0.2);
-}
-
-/* 响应式调整 */
-@media (max-width: 768px) {
-  .application-form {
-      padding: 1rem;
-  }
-
-  .form-row {
-      flex-direction: column;
-      gap: 1rem;
-  }
-
-  .radio-group,
-  .checkbox-group {
   h2 {
       font-size: 1.75rem;
   }
